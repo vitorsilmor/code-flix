@@ -15,3 +15,11 @@ use Illuminate\Routing\Route;
 |
 */
 
+$withoutViews = ['create', 'edit'];
+
+Route::group(['namespace' => 'Api'], function() use ($withoutViews){
+    Route::resource('categories', CategoryController::class, ['except' => $withoutViews]);
+    Route::resource('genders', CategoryController::class, ['except' => $withoutViews]);
+});
+
+

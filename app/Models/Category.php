@@ -1,6 +1,6 @@
 <?php
 
-namespace App\models;
+namespace App\Models;
 
 use App\models\traits\Uuid as TraitsUuid;
 use Illuminate\Database\Eloquent\Model;

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class CategoriesSeeder extends Seeder
+class GendersSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class CategoriesSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Models\Category::class, 100)->create();
+        factory(\App\Models\Gender::class, 100)->create();
     }
 }
